@@ -1,0 +1,24 @@
+{
+  "name": "datefactshomework",
+  "version": "0.0.1",
+  "description": "Date Facts homework for Monday July 24th 2017. ",
+  "main": "app.js",
+  "scripts": { 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "date-facts"
+  },
+  "keywords": [
+    "npm",
+    "nodejs",
+    "practice"
+  ],
+  "author": "Tristan",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "moment": "^2.18.1"
+  }
+}
