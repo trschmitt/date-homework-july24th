@@ -4,12 +4,12 @@ const moment = require('moment');
 let timeStamp = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 let day = moment().format("DDDo");
 let midnight = moment().startOf("day");
-let dayLightSave = moment().format("dddd, MMMM Do YYYY, h:mm:ss a").isDST();
-let leapYear = moment().format("YYYY").isLeapYear();
+let dayLightSave = moment("dddd, MMMM Do YYYY, h:mm:ss a").isDST();
+let leapYear = moment("YYYY").isLeapYear();
 
 let secFromMidnight = moment().diff(midnight, "seconds");
 
 
-console.log(`${chalk.blue(timeStamp)}`);
-console.log(`Today is the ${day} day of the year.`);
-console.log(`${chalk.secFromMidnight}`);
+console.log(`It is ${chalk.blueBright(timeStamp)}`);
+console.log(`Today is the ${chalk.greenBright(day)} day of the year.`);
+console.log(`${chalk.cyan(secFromMidnight)}`);
